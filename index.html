@@ -1,14 +1,31 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Agencia de Viajes</title>
+    <meta charset="UTF-8">
+    <title>Agencia Aventura Global - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-<h1>Agencia de Viajes</h1>
-<p>Búsqueda de vuelos y paquetes turísticos</p>
-
+    <div class="container">
+        <header style="background: #2c3e50; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center;">
+            <div class="logo"><h1>Aventura <span>Global</span></h1></div>
+            <nav>
+                <ul style="list-style: none; display: flex; gap: 15px;">
+                    <li><a href="index.php" style="color: white; text-decoration: none;">Inicio</a></li>
+                    <li><a href="formulario_viaje.php" style="color: white; text-decoration: none;">Buscador</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main style="padding: 40px; text-align: center; background: white;">
+            <h2>Bienvenido a la plataforma colaborativa</h2>
+            <p>Hemos actualizado la interfaz para incluir búsqueda de vuelos y paquetes.</p>
+            <div style="margin-top: 20px;">
+                <a href="formulario_viaje.php" style="background: #4a6491; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Ir al Buscador</a>
+            </div>
+        </main>
+    </div>
 </body>
-
 </html>
